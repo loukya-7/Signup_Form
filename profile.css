@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    background-image: url('https://m.media-amazon.com/images/I/71YVxm3BKmL._AC_UF894,1000_QL80_.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-color:whitesmoke;
+    background-size: cover;
+    position: relative; 
+   
+}
+h3{
+    margin: 10px 0 20px 0;
+    color: #625BF7;
+    
+}
+.profileDetailsContainer{
+   
+    width: 444px;
+    /* height: 537px; */
+    background-color:skyblue;
+    padding: 35px;
+    border-radius: 4px;
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     
+}
+.profileImageAndText{
+    display: flex;
+    /* gap: 25px; */
+    flex-direction: column;
+    align-items: center;
+} 
+.profileText{
+    margin-top: -17px;
+}
+.profileText{
+    color: #333333;
+}
+.profileImage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+#profileDetails{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profileDetails p{
+    padding: 10px;
+    color: #333333;
+    font-size: 1.1rem;
+    
+}
+.buttonField{
+    width: 100%;
+}
+#logoutButton{
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width : 680px) {
+    .profileDetailsContainer{
+        width: 450px;  
+    }
+}
+@media only screen and (max-width : 448px) {
+    .profileDetailsContainer{
+        width: 330px;
+    }
+    #profileDetails p{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 336px) {
+  
+    #profileDetails p{
+        padding: 5px 0px;
+        font-size: 0.9rem;
+    }
+    .profileDetailsContainer{
+        width: 280px;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         
+    }
+}
